@@ -1,0 +1,56 @@
+clear all
+syms q1 q2 q3 q4 q5 q6 d1 d2 d3 d4 d5 d6 
+syms L1 L2 L3 L4 L5 L6 L7 A B C
+format short 
+
+F = sym(pi)/180;
+
+
+T1 = Tz(-L1)*Rx(q1)
+T2 = Rz(q2)*Tz(-L2)
+T3 = Rz(90*F)*Tx(-d3)
+T4 = Tz(-L4)
+T5 = Rz(90*F)*Rx(q4)
+T6 = Rz(90*F)*Tz(-L5)*Tx(-L6)
+TT = T1*T2*T3*T4*T5*T6
+simplify(TT)
+
+
+X = -sin(q2)*(d3 + L6*cos(q4) - L5*sin(q4))
+Y = L5*(cos(q4)*sin(q1) - cos(q1)*cos(q2)*sin(q4)) + L6*(sin(q1)*sin(q4) + cos(q1)*cos(q2)*cos(q4)) + L2*sin(q1) + L4*sin(q1) + d3*cos(q1)*cos(q2)
+Z = d3*cos(q2)*sin(q1) - L5*(cos(q1)*cos(q4) + cos(q2)*sin(q1)*sin(q4)) - L6*(cos(q1)*sin(q4) - cos(q2)*cos(q4)*sin(q1)) - L2*cos(q1) - L4*cos(q1) - L1
+
+
+
+function [ROT] = Rotacion(M)
+ROT = [M(1,1), M(1,2), M(1,3);
+       M(2,1), M(2,2), M(2,3);
+       M(3,1), M(3,2), M(3,3);];
+   
+end
+
+function [RF] = Rf(q, L1) 
+RF = [cos(q) 0 sin(q) 0 ; sin(q) 0 -cos(q) 0; 0 1 0 L1; 0 0 0 1]
+end
+
+
+function [RZ] = Rz(q) 
+RZ = [cos(q) -sin(q) 0 0; sin(q) cos(q) 0 0; 0 0 1 0; 0 0 0 1]
+end
+
+function [RX] = Rx(q) 
+RX = [1 0 0 0; 0 cos(q) -sin(q) 0; 0 sin(q) cos(q) 0;0 0 0 1]
+end
+
+
+function [TX] = Tx(q) 
+TX = [1 0 0 q; 0 1 0 0; 0 0 1 0; 0 0 0 1]
+end
+
+function [TZ] = Tz(q) 
+TZ = [1 0 0 0; 0 1 0 0; 0 0 1 q; 0 0 0 1]
+end
+
+function [TY] = Ty(q) 
+TY = [1 0 0 0; 0 1 0 q; 0 0 1 0; 0 0 0 1]
+end

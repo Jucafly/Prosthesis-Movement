@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="user" on="11/17/21||19:30:09" using="Simscape Multibody Link Version 5.0" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="lbmass" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="EnsableCagadocopia v2.iam" uid="EnsableCagadocopia v2.iam_13F6BFBF-46AE-CEC8-9103-5DB6E2ED487C" version="">
+<AssemblyFile name="EnsableCagadocopia v2.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Rodilla v2:1" grounded="true" uid="Rodilla v2:1" entityUid="Rodilla v2.iam_C2DC40FD-484A-045F-B226-168117DBEB4A" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="RotatyBase v2:1" grounded="true" uid="RotatyBase v2:1" entityUid="RotatyBase v2.ipt_60F98F04-4EB5-19D1-2F64-1EAC56B4F076">
+<Transform>
+<Rotation>1 0 0 0 1 3.5975288371567198e-016 0 -3.5975288371567198e-016 1</Rotation>
+<Translation>-0.22135814382083199 0.15409912233714301 -0.45050788739873299</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="FinalFinal v2:1" uid="FinalFinal v2:1" entityUid="FinalFinal v2.iam_7F0E7E65-4A64-7FB2-54F0-149D2BA9FA05" rigid="true">
+<Transform>
+<Rotation>1 -8.0224952981470264e-016 5.8411948118582134e-016 8.0219324305475443e-016 0.99999999535782347 9.6355347798530652e-005 -5.8419677950670318e-016 -9.6355347798530652e-005 0.99999999535782347</Rotation>
+<Translation>-5.5753733762636335 -11.16656626823891 14.244433206950697</Translation>
+</Transform>
+<Instance name="pt2 v1:1" grounded="true" uid="pt2 v1:1" entityUid="pt2 v1.ipt_EBEB4EE7-46F4-4F0B-64C5-07A24A5C99A4">
+<Transform>
+<Rotation>0 0 1 3.5975183335784644e-016 -1 0 1 3.5975183335784644e-016 0</Rotation>
+<Translation>4.3540152324428192 13.322081264899198 -14.6936575087863</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Revolut v2:1" uid="Revolut v2:1" entityUid="Revolut v2.iam_745D65B7-47FC-296F-284A-12BED506BA2E" rigid="true">
+<Transform>
+<Rotation>1 -8.0224952981470205e-016 5.4950794422448455e-016 8.0219657806143618e-016 0.99999999535782391 9.6355347798530652e-005 -5.4958524270603823e-016 -9.6355347798530652e-005 0.99999999535782391</Rotation>
+<Translation>-4.3313840030399637e-015 6.8226687852295312e-006 -0.37959673754166628</Translation>
+</Transform>
+<Instance name="Component11:1" grounded="true" uid="Component11:1" entityUid="Component11.ipt_3DD67C2B-44D4-6A8A-AF94-B7A8B16E3F65">
+<Transform>
+<Rotation>1 0 0 0 1 3.5973828083069037e-016 0 -3.5973828083069037e-016 1</Rotation>
+<Translation>-0.221358143820826 -42.145900877662797 -1.1623970999400701</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="BraketTobillo v2:1" uid="BraketTobillo v2:1" entityUid="BraketTobillo v2.ipt_8E9BE7CA-4ED1-1D60-D768-E0B1617C3932">
+<Transform>
+<Rotation>3.6443833615544301e-016 -8.0224952981470097e-016 -0.99999999999999978 9.6355347799191446e-005 0.99999999535782302 3.0798941560574899e-016 0.99999999535782169 -9.6355347798753496e-005 1.6521517400560186e-016</Rotation>
+<Translation>2.028641856179207 -47.527841192463313 -2.0734790035584778</Translation>
+</Transform>
+</Instance>
+<Instance name="pie v3:1" uid="pie v3:1" entityUid="pie v3.ipt_771F60E7-4533-523F-3C0C-3EBCED4C7205">
+<Transform>
+<Rotation>0.999999999999999 0 0 7.215004504107797e-016 0.99999991923182496 0.00040191583637767906 -1.6521517400560166e-016 -0.00040191583637781827 0.99999991923182574</Rotation>
+<Translation>-4.4713581438207903 -55.722732267823154 -10.707077818678048</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Mate:1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>FinalFinal v2:1</Uid>
+</InstancePath>
+<Position>6.3540152324428192 13.322081264899198 -14.6936575087863</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Rodilla v2:1</Uid>
+</InstancePath>
+<Position>0.77864185617916803 2.1540991223371431 -0.45050788739873371</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>FinalFinal v2:1</Uid>
+</InstancePath>
+<Position>4.3540152324428192 13.322081264899198 -14.6936575087863</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Rodilla v2:1</Uid>
+</InstancePath>
+<Position>-1.2213581438208321 2.1540991223371431 -0.45050788739873365</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Revolut v2:1</Uid>
+</InstancePath>
+<Position>-0.221358143820826 -39.3459008776628 -1.2527170490769581</Position>
+<Axis>0 0.99999999999999956 -3.5973828083069037e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FinalFinal v2:1</Uid>
+</InstancePath>
+<Position>5.3540152324428192 -28.1779187351008 -15.405546721327623</Position>
+<Axis>0 1 -3.5975183335784644e-016</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Revolut v2:1</Uid>
+</InstancePath>
+<Position>-0.47135814382082603 -39.645900877662804 -2.6414170457149702</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FinalFinal v2:1</Uid>
+</InstancePath>
+<Position>5.1040152324428201 -28.477918735100804 -17.641614698827414</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BraketTobillo v2:1</Uid>
+</InstancePath>
+<Position>0.5360647205390594 0.43914301510245224 2.2500000000000004</Position>
+<Axis>-5.7488464943328266e-016 1.0000000000000004 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Revolut v2:1</Uid>
+</InstancePath>
+<Position>-0.221358143820826 -42.145900877662797 -1.1623970999400701</Position>
+<Axis>0 0.99999999999999956 -3.5973828083069037e-016</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Flush:1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BraketTobillo v2:1</Uid>
+</InstancePath>
+<Position>-2.0000000000000049 4.681783702221729 4.5000000000000009</Position>
+<Axis>-4.3808544031992414e-016 1.0000000000000004 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Revolut v2:1</Uid>
+</InstancePath>
+<Position>-0.221358143820826 -42.845900877662807 -1.1623970999400699</Position>
+<Axis>0 0.99999999999999956 -3.5973828083069037e-016</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pie v3:1</Uid>
+</InstancePath>
+<Position>5.5000000000000311 8.1914204333847707 8.6368917743001692</Position>
+<Axis>1.0000000000000009 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BraketTobillo v2:1</Uid>
+</InstancePath>
+<Position>1.3322676295501878e-015 -7.1054273576010019e-015 4.5000000000000009</Position>
+<Axis>-1.9919348648954144e-016 1.1102230246251569e-015 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pie v3:1</Uid>
+</InstancePath>
+<Position>5.5000000000000053 7.1054273576010019e-015 -1.7763568394002505e-015</Position>
+<Axis>-1.0000000000000009 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BraketTobillo v2:1</Uid>
+</InstancePath>
+<Position>-3.0278705589218942 -1.4999999999999929 1.0000000000000004</Position>
+<Axis>-1.9919348648954154e-016 1.258866566868965e-015 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="Rodilla v2.iam" uid="Rodilla v2.iam_C2DC40FD-484A-045F-B226-168117DBEB4A" version="">
+<AssemblyFile name="Rodilla v2.iam" type="Inventor Assembly"/>
+</Assembly>
+<Assembly name="FinalFinal v2.iam" uid="FinalFinal v2.iam_7F0E7E65-4A64-7FB2-54F0-149D2BA9FA05" version="">
+<AssemblyFile name="FinalFinal v2.iam" type="Inventor Assembly"/>
+</Assembly>
+<Assembly name="Revolut v2.iam" uid="Revolut v2.iam_745D65B7-47FC-296F-284A-12BED506BA2E" version="">
+<AssemblyFile name="Revolut v2.iam" type="Inventor Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="BraketTobillo v2.ipt" uid="BraketTobillo v2.ipt_8E9BE7CA-4ED1-1D60-D768-E0B1617C3932" version="">
+<PartFile name="BraketTobillo v2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.25346372725313276</Mass>
+<CenterOfMass>0.8015114646849969 2.7618150053255355 2.2499999999999987</CenterOfMass>
+<Inertia>1.8311930622848194 1.0928314957002176 1.7132204139257119 -6.8212102632969619e-016 0 -0.20454782381040765</Inertia>
+</MassProperties>
+<GeometryFile name="BraketTobillo v2_ipt_f24ebc66.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Component11.ipt" uid="Component11.ipt_3DD67C2B-44D4-6A8A-AF94-B7A8B16E3F65" version="">
+<PartFile name="Component11.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.1810788937865799</Mass>
+<CenterOfMass>8.4112636650944449e-011 0.93398040838039409 0</CenterOfMass>
+<Inertia>0.26459734646390431 0.20244387112843137 0.26205760605488271 0 0 1.1560032868199182e-011</Inertia>
+</MassProperties>
+<GeometryFile name="Component11_ipt_2af5a5ff.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="pie v3.ipt" uid="pie v3.ipt_771F60E7-4533-523F-3C0C-3EBCED4C7205" version="">
+<PartFile name="pie v3.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>6.8126435697353127</Mass>
+<CenterOfMass>4.0138187235833351 2.9193963961122069 6.4168323601269304</CenterOfMass>
+<Inertia>339.72199672064187 348.94176401431531 56.547569120235451 -32.327555366197195 -0.2527773989700654 -0.44984382855954752</Inertia>
+</MassProperties>
+<GeometryFile name="pie v3_ipt_ec1e424e.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="pt2 v1.ipt" uid="pt2 v1.ipt_EBEB4EE7-46F4-4F0B-64C5-07A24A5C99A4" version="">
+<PartFile name="pt2 v1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>6.6641216751365073</Mass>
+<CenterOfMass>-0.28062718124357511 20.071624001433431 0.99999999999941858</CenterOfMass>
+<Inertia>818.94188415914164 24.439281718661558 822.12081918810725 -6.8335793912410732e-011 1.0868461686186493e-012 21.198059505268226</Inertia>
+</MassProperties>
+<GeometryFile name="pt2 v1_ipt_fe440787.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="RotatyBase v2.ipt" uid="RotatyBase v2.ipt_60F98F04-4EB5-19D1-2F64-1EAC56B4F076" version="">
+<PartFile name="RotatyBase v2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.47364985056723508</Mass>
+<CenterOfMass>-0.72772560840027123 6.0230967972027214 -0.30501282596644591</CenterOfMass>
+<Inertia>6.9902823279691946 3.3023592897308065 6.9160685070554209 0.91622268642777638 -0.20872288915329876 0.96646582193274211</Inertia>
+</MassProperties>
+<GeometryFile name="RotatyBase v2_ipt_131c04b0.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
